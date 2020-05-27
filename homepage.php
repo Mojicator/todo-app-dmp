@@ -26,9 +26,15 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed numquam similique voluptatibus odio atque aperiam laboriosam distinctio, reprehenderit, quod nostrum corrupti omnis est aut odit repellendus optio sapiente impedit.</div>
-    <div class="col-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla incidunt adipisci obcaecati labore quo nostrum? Nemo hic quidem aspernatur dolore commodi doloribus vero at. Odio eaque praesentium dolores nostrum facere.</div>
-    <div class="col-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla incidunt adipisci obcaecati labore quo nostrum? Nemo hic quidem aspernatur dolore commodi doloribus vero at. Odio eaque praesentium dolores nostrum facere.</div>
+    <div class="col-4">
+      <?php require_once('./lists/all_lists.php'); ?>
+    </div>
+    <div class="col-4">
+      <?php require_once('./lists/selected_list.php'); ?>
+    </div>
+    <div class="col-4">
+      <?php require_once('./lists/selected_task.php'); ?>
+    </div>
   </div>
 </div>
 
