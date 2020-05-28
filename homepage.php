@@ -27,7 +27,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-4">
-      <?php require_once('./lists/all_lists.php'); ?>
+      <?php 
+        require_once('./lists/all_lists.php'); 
+      ?>
     </div>
     <div class="col-4">
       <?php require_once('./lists/selected_list.php'); ?>
