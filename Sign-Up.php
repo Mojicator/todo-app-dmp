@@ -1,20 +1,3 @@
-<?php
-	require './config/config2.php';
-	if(!empty($_POST['email']) && !empty($_POST['password']) ){
-		$sql = "INSERT INTO Users (Email, Password) VALUES (:Email, :Password)";
-		$stmt = $conn->prepare($sql);
-		$stmt->bindParam(':Email, ', $_POST['Email']);
-		$Pass = password_hash($_POST['password'], PASSWORD_BCRYPT);
-		$stmt->bindParam(':Password', $Pass);
-
-		if ($stmt->execute()){
-			$message = 'Seccessfully created new user';
-		}else{
-			$message = 'An error ocurred';
-		}
-	}
-?>
-
 <!DOCTYPE html>
 <html>
     
@@ -31,7 +14,7 @@
 		<div class="brand_logo_container">
 						<img src="./images/icon.png"  alt="ToDoListApp">
 					</div>
-            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up in ToDoApp</legend>
+            <form action="./controllers/signup.php" method="post" accept-charset="utf-8" class="form" role="form">   <legend>Sign Up in ToDoApp</legend>
                     <h4>It's free and always will be... I hope</h4>
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
@@ -50,7 +33,7 @@
                         Create my account</button>
 						<div class="mt-4">
 			  <div class="d-flex justify-content-center links">
-						Or <a href="./Login.php" class="ml-2">Login</a>					
+						Or <a href="./index.html" class="ml-2">Login</a>					
 					</div>
 </div>
 					</form>  

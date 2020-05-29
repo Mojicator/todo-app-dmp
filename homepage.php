@@ -1,11 +1,10 @@
 <?php 
   session_start();
-  $_SESSION['user_id'] = 1;
-  $_SESSION['username'] = 'Cindy Entes';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>ToDoApp</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -25,7 +24,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Settings</a>
-      <a class="nav-item nav-link" href="#">Logout</a>
+      <a class="nav-item nav-link" href="./controllers/logout.php">Logout</a>
     </div>
   </div>
   <div>
