@@ -1,5 +1,5 @@
 <?php 
-$servername = "picachosystems.com:3306";
+$servername = "localhost";
 $username = "sqldmp";
 $password = "sqldmp123";
 $database = "equipo5";

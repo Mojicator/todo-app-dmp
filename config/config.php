@@ -1,5 +1,5 @@
 <?php 
-  define('DB_SERVER', 'picachosystems.com:3306');
+  define('DB_SERVER', 'localhost');
   define('DB_USERNAME', 'sqldmp');
   define('DB_PASSWORD', 'sqldmp123');
   define('DB_DATABASE', 'equipo5');
